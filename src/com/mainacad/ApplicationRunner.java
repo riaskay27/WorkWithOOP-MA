@@ -1,13 +1,18 @@
 package com.mainacad;
 
+import com.mainacad.abs.Abs;
 import com.mainacad.circle.Circle;
 import com.mainacad.square.Square;
 import com.mainacad.triangle.Triangle;
-
+import com.mainacad.abs.Shape;
 public class ApplicationRunner {
 
 
     public static void main(String[] args) {
+      Shape triangle=new Triangle();
+      Shape circle=new Circle();
+      Shape square=new Square();
+
       Square square10=new Square();
       Circle squareCircle=new Circle();
         Triangle squareTriangle= new Triangle();
@@ -25,5 +30,6 @@ public class ApplicationRunner {
                 "height " + squareTriangle.getHeight1()+
                 " and side "+ squareTriangle.getSide1() +
                 " has area "+ squareTriangle.getArea());
+
     }
 }

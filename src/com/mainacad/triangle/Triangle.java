@@ -1,6 +1,9 @@
 package com.mainacad.triangle;
 
-public class Triangle {
+import com.mainacad.abs.Abs;
+import com.mainacad.abs.Shape;
+
+public class Triangle extends Abs {
   private double side1;
    private double height1;
     public double getSide1() {
@@ -18,6 +21,7 @@ public class Triangle {
     public void setHeight1(double height1) {
         this.height1 = height1;
     }
+    @Override
     public double getArea(){
         return (side1*height1)/2;
     }
